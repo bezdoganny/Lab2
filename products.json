@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Ноутбук Dell XPS 15",
+    "category": "laptops",
+    "price": 58999,
+    "description": "Потужний ноутбук для програмування та ігор з екраном 4K.",
+    "image": "dell.webp"
+  },
+  {
+    "id": 2,
+    "name": "Смартфон iPhone 14 Pro",
+    "category": "smartphones",
+    "price": 28999,
+    "description": "Сучасний смартфон з чудовою камерою.",
+    "image": "iphone.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Навушники Sony WH-1000XM5",
+    "category": "accessories",
+    "price": 8999,
+    "description": "Бездротові навушники з найкращим активним шумозаглушенням.",
+    "image": "sony.webp"
+  },
+  {
+    "id": 4,
+    "name": "Ноутбук Lenovo ThinkPad",
+    "category": "laptops",
+    "price": 27999,
+    "description": "Надійний робочий інструмент.",
+    "image": "thinkpad.webp"
+  },
+  {
+    "id": 5,
+    "name": "Смарфон Google Pixel 10 pro",
+    "category": "smartphones",
+    "price": 29999,
+    "description": "Стильний смарфон від Google",
+    "image": "pixel.png"
+  }
+]

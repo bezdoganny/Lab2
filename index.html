@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Інтернет-магазин</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">TechStore</div>
+        <nav class="menu">
+            <a href="#">Головна</a>
+            <a href="#">Каталог</a>
+            <a href="#">Контакти</a>
+        </nav>
+       <div class="cart-container" id="cart-btn" style="cursor: pointer;">
+        🛒 Кошик: <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    
+
+    <main class="main-container">
+        
+        <aside class="sidebar">
+            <h3>Фільтри</h3>
+            
+            <div class="filter-group">
+                <label for="category">Категорія:</label>
+                <select id="category">
+                    <option value="all">Всі товари</option>
+                    <option value="laptops">Ноутбуки</option>
+                    <option value="smartphones">Смартфони</option>
+                    <option value="accessories">Аксесуари</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Ціна ($):</label>
+                <input type="number" id="min-price" placeholder="Від" min="0">
+                <input type="number" id="max-price" placeholder="До" min="0">
+            </div>
+
+            <button id="apply-filters" class="btn">Застосувати</button>
+        </aside>
+
+        <section class="content">
+            <div id="products-grid" class="products-grid">
+                </div>
+            <div id="no-products" class="hidden">Товари не знайдено</div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="contact-info">
+            <p>Email: info@techstore.com | Тел: +380 (99) 123-45-67</p>
+        </div>
+        <div class="social-links">
+            <a href="#">Instagram</a> | <a href="#">Telegram</a>
+        </div>
+    </footer>
+
+    <div id="product-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-details">
+                </div>
+        </div>
+    </div>
+
+    <div id="cart-modal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close-cart-btn close-btn">&times;</span>
+        <h2>Ваш кошик</h2>
+        
+        <div id="cart-items" style="margin-top: 15px;">
+            </div>
+        
+        <hr style="margin: 15px 0;">
+        <h3 style="text-align: right;">Загальна сума: $<span id="cart-total">0</span></h3>
+        <button class="btn" style="width: 100%; margin-top: 15px;">Оформити замовлення</button>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
